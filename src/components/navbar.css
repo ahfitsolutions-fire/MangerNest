@@ -1,0 +1,82 @@
+/* Announcement bar */
+.announcement-bar {
+  background: #556b2f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Navbar base */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fffaf0;
+  transition: all 0.3s ease;
+}
+
+/* On scroll effect */
+.navbar-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Inner layout */
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+}
+
+/* Logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Center links */
+.nav-center a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: #3e2723;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-center a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background: #b8860b;
+  transition: width 0.3s ease;
+}
+
+.nav-center a:hover::after {
+  width: 100%;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  margin-right: 14px;
+  text-decoration: none;
+  color: #3e2723;
+}
+
+/* Icons */
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}

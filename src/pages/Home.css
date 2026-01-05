@@ -1,0 +1,98 @@
+.home {
+  font-family: "Inter", sans-serif;
+}
+
+/* Sections */
+.section {
+  padding: 70px 20px;
+}
+
+.section.light {
+  background: #f5eddc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+/* Category Cards */
+.category-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.category-card p {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Badges */
+.badge-row {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Story */
+.story-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.story-image {
+  background: #e8dcc6;
+  height: 260px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Testimonials */
+.testimonial-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
