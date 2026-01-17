@@ -1,43 +1,34 @@
-:root {
-  --beige-bg: #EFE6D6;
-  --soft-white: #FFFFFF;
-  --sage-green: #A8B6A1;
-  --heading-brown: #4A3F35;
-  --body-gray: #6F6A63;
-  --soft-shadow: rgba(0, 0, 0, 0.08);
-}
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: var(--beige-bg);
-  color: var(--body-gray);
+  background: #ffffff;
+  color: #000000;
 }
 
 
 .nav{
-  background: var(--soft-white);
+  background: #FFFFFF;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 10px var(--soft-shadow);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .nav h1 {
-  color: var(--heading-brown);
+  color:#4A3F35;
   font-weight: 500;
 }
 
 .nav a {
-  color: var(--body-gray);
+  color:#000000;
   text-decoration: none;
   margin-left: 24px;
 }
 
 
 .hero {
-  background: var(--soft-white);
+  background: #FFFFFF;
   padding: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -50,12 +41,12 @@ body {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
-  color: var(--heading-brown);
+  color:black;
 }
 
 
 .primary-btn {
-  background: var(--sage-green);
+  background: #000000;
   color: white;
   padding: 12px 28px;
   border-radius: 24px;
@@ -66,11 +57,11 @@ body {
 
 
 .card {
-  background: var(--soft-white);
+  background: #FFFFFF;
   padding: 30px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 8px 20px var(--soft-shadow);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -82,23 +73,23 @@ body {
 }
 
 .trust-item {
-  background: var(--soft-white);
+  background: #FFFFFF;
   padding: 20px 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px var(--soft-shadow);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 
 .testimonial {
-  background: var(--soft-white);
+  background: #FFFFFF;
   padding: 24px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px var(--soft-shadow);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 
 .footer {
-  background: var(--beige-bg);
+  background: #ffffff;
   padding: 60px 40px;
-  color: var(--body-gray);
+  color: black;
 }

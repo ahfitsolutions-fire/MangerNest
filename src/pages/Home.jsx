@@ -1,13 +1,25 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { getProducts } from "../api/products";
 
 export default function Home() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProducts().then(setProducts);
+  }, []);
+
+  const bedsCount = products.filter(p => p.category === "beds").length;
+  const clothesCount = products.filter(p => p.category === "clothes").length;
+
   return (
     <div className="home">
 
-            {/* HERO SECTION */}
+      {/* HERO SECTION */}
       <section className="hero">
         <h1>
-          Peaceful Beginnings,<br />Inspired Care.
+          Peaceful Beginnings,<br />Inspired care.
         </h1>
         <button className="primary-btn">Shop Now</button>
       </section>
@@ -17,18 +29,39 @@ export default function Home() {
         <h2 className="section-title">Featured Product Categories</h2>
 
         <div className="category-grid">
-          <div className="category-card">
-            🛏️
-            <p>Baby Beds</p>
+
+          {/* Manger Beds */}
+          <Link to="/products" className="category-card">
+            <img
+              src="/images/manger-bed.jpg"
+              className="category-image"
+              alt="Manger Beds"
+            />
+            <p className="category-title">Manger Beds</p>
+            <span className="category-sub">
+              Heavenly Rest · {bedsCount} Products
+            </span>
+          </Link>
+
+          {/* Kids Clothing */}
+          <Link to="/kids-clothing" className="category-card">
+            <img
+              src="/images/kids-clothing.jpg"
+              className="category-image"
+              alt="Kids Clothing"
+            />
+            <p className="category-title">Kids Pure Cotton</p>
+            <span className="category-sub">
+              Soft as Grace · {clothesCount} Products
+            </span>
+          </Link>
+
+          {/* Gift Sets */}
+          <div className="category-card disabled">
+            <p className="category-title">Gift Sets</p>
+            <span className="category-sub">Coming Soon</span>
           </div>
-          <div className="category-card">
-            👕
-            <p>Baby Clothes</p>
-          </div>
-          <div className="category-card">
-            🎁
-            <p>Gift Sets</p>
-          </div>
+
         </div>
       </section>
 
@@ -52,9 +85,7 @@ export default function Home() {
               crafted gently, honoring life as God’s precious gift.
             </p>
           </div>
-          <div className="story-image">
-            Image
-          </div>
+          <div className="story-image">Image</div>
         </div>
       </section>
 

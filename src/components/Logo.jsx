@@ -15,7 +15,7 @@ export default function Logo() {
       onClick={handleClick}
     >
       <img src={logo} alt="MangerNest Logo" className="logo-img" />
-      <span className="logo-text">MangerNest – God Is the Boss. We Are Only Stewards.</span>
+      <span className="logo-text">MangerNest - Baby of promise </span>
     </div>
   );
 }
